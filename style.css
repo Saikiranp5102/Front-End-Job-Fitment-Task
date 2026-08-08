@@ -1,0 +1,80 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.task-input {
+  margin-bottom: 1rem;
+}
+
+#taskForm {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background: rgb(32, 211, 32);
+  border: none;
+}
+
+.task-list ul {
+  list-style: none;
+}
+
+.task-list li {
+  /* background: #fff; */
+  background: rgb(0, 0, 0);
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: white;
+  background-color: rgb(207, 47, 207);
+}
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
